@@ -1,5 +1,3 @@
-// ignore_for_file: prefer_const_constructors
-
 import 'package:flutter/material.dart';
 
 void main() {
@@ -22,14 +20,11 @@ class MyApp extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text("Username"),
+                Text("User ID"),
                 SizedBox(
-                  width: 10,
+                  width: 12,
                 ),
-                Container(width: 250, height: 50, child: TextField(
-                    decoration: const InputDecoration(
-                          hintText: ('Enter Username'),
-                    ),
+                Container(width: 290, height: 80, child: TextField(),
                 ),
                 ),
               ],
@@ -37,24 +32,20 @@ class MyApp extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text("Password"),
+                Text("Pass"),
                 SizedBox(
-                  width: 10,
+                  width: 12,
                 ),
                 Container(
-                    width: 250,
-                    height: 50,
-                    child: TextField(
-                      obscureText: true,
-                      decoration: const InputDecoration(
-                          hintText: ('Enter Password'),),
-                    ),
+                    width: 290,
+                    height: 80,
+                    child: TextField( ),
                     ),
               ],
             ),
             ElevatedButton(
               onPressed: () {},
-              child: Text("Login"),
+              child: Text("Login!!!"),
             ),
           ],
         ),
